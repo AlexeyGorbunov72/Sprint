@@ -14,6 +14,22 @@
 		CA8AA251258BCBB800825213 /* Sprint.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CA8AA24F258BCBB800825213 /* Sprint.xcdatamodeld */; };
 		CA8AA253258BCBBC00825213 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA8AA252258BCBBC00825213 /* Assets.xcassets */; };
 		CA8AA256258BCBBC00825213 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA8AA254258BCBBC00825213 /* LaunchScreen.storyboard */; };
+		CA8AA25F258BCF6700825213 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8AA25E258BCF6700825213 /* Employee.swift */; };
+		CA8AA262258BD0E100825213 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8AA261258BD0E100825213 /* Task.swift */; };
+		CA8AA265258BD11300825213 /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8AA264258BD11300825213 /* TaskManager.swift */; };
+		CA8AA268258BD92000825213 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8AA267258BD92000825213 /* Comment.swift */; };
+		CA8AA26B258BDDE200825213 /* HierarchyNet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8AA26A258BDDE200825213 /* HierarchyNet.swift */; };
+		CA8AA26E258BE00D00825213 /* HierarchyIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8AA26D258BE00D00825213 /* HierarchyIterator.swift */; };
+		CA8AA271258BFD7000825213 /* EmployeeTreeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8AA270258BFD7000825213 /* EmployeeTreeGenerator.swift */; };
+		CA8AA274258C04A800825213 /* TasksIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8AA273258C04A800825213 /* TasksIterator.swift */; };
+		CA8AA277258C075C00825213 /* Commit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8AA276258C075C00825213 /* Commit.swift */; };
+		CA8AA27A258C132600825213 /* PromotedEmployee.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8AA279258C132600825213 /* PromotedEmployee.swift */; };
+		CA8AA27D258C1CDE00825213 /* Report.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8AA27C258C1CDD00825213 /* Report.swift */; };
+		CA8AA280258C1D3C00825213 /* ReportVisitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8AA27F258C1D3C00825213 /* ReportVisitor.swift */; };
+		CA8AA283258C1E7200825213 /* ReportBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8AA282258C1E7200825213 /* ReportBuilder.swift */; };
+		CA8AA286258C1F3C00825213 /* ReportView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA8AA285258C1F3C00825213 /* ReportView.xib */; };
+		CA8AA289258C213400825213 /* TaskView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA8AA288258C213400825213 /* TaskView.xib */; };
+		CA8AA28C258C222C00825213 /* LikeButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA8AA28B258C222C00825213 /* LikeButton.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +42,22 @@
 		CA8AA252258BCBBC00825213 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA8AA255258BCBBC00825213 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA8AA257258BCBBC00825213 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA8AA25E258BCF6700825213 /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		CA8AA261258BD0E100825213 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		CA8AA264258BD11300825213 /* TaskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManager.swift; sourceTree = "<group>"; };
+		CA8AA267258BD92000825213 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		CA8AA26A258BDDE200825213 /* HierarchyNet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HierarchyNet.swift; sourceTree = "<group>"; };
+		CA8AA26D258BE00D00825213 /* HierarchyIterator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HierarchyIterator.swift; sourceTree = "<group>"; };
+		CA8AA270258BFD7000825213 /* EmployeeTreeGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeTreeGenerator.swift; sourceTree = "<group>"; };
+		CA8AA273258C04A800825213 /* TasksIterator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksIterator.swift; sourceTree = "<group>"; };
+		CA8AA276258C075C00825213 /* Commit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commit.swift; sourceTree = "<group>"; };
+		CA8AA279258C132600825213 /* PromotedEmployee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotedEmployee.swift; sourceTree = "<group>"; };
+		CA8AA27C258C1CDD00825213 /* Report.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Report.swift; sourceTree = "<group>"; };
+		CA8AA27F258C1D3C00825213 /* ReportVisitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportVisitor.swift; sourceTree = "<group>"; };
+		CA8AA282258C1E7200825213 /* ReportBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportBuilder.swift; sourceTree = "<group>"; };
+		CA8AA285258C1F3C00825213 /* ReportView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReportView.xib; sourceTree = "<group>"; };
+		CA8AA288258C213400825213 /* TaskView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskView.xib; sourceTree = "<group>"; };
+		CA8AA28B258C222C00825213 /* LikeButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LikeButton.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +98,22 @@
 				CA8AA254258BCBBC00825213 /* LaunchScreen.storyboard */,
 				CA8AA257258BCBBC00825213 /* Info.plist */,
 				CA8AA24F258BCBB800825213 /* Sprint.xcdatamodeld */,
+				CA8AA25E258BCF6700825213 /* Employee.swift */,
+				CA8AA261258BD0E100825213 /* Task.swift */,
+				CA8AA264258BD11300825213 /* TaskManager.swift */,
+				CA8AA267258BD92000825213 /* Comment.swift */,
+				CA8AA26A258BDDE200825213 /* HierarchyNet.swift */,
+				CA8AA26D258BE00D00825213 /* HierarchyIterator.swift */,
+				CA8AA270258BFD7000825213 /* EmployeeTreeGenerator.swift */,
+				CA8AA273258C04A800825213 /* TasksIterator.swift */,
+				CA8AA276258C075C00825213 /* Commit.swift */,
+				CA8AA279258C132600825213 /* PromotedEmployee.swift */,
+				CA8AA27C258C1CDD00825213 /* Report.swift */,
+				CA8AA27F258C1D3C00825213 /* ReportVisitor.swift */,
+				CA8AA282258C1E7200825213 /* ReportBuilder.swift */,
+				CA8AA285258C1F3C00825213 /* ReportView.xib */,
+				CA8AA288258C213400825213 /* TaskView.xib */,
+				CA8AA28B258C222C00825213 /* LikeButton.xib */,
 			);
 			path = Sprint;
 			sourceTree = "<group>";
@@ -127,8 +175,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA8AA28C258C222C00825213 /* LikeButton.xib in Resources */,
 				CA8AA256258BCBBC00825213 /* LaunchScreen.storyboard in Resources */,
+				CA8AA289258C213400825213 /* TaskView.xib in Resources */,
 				CA8AA253258BCBBC00825213 /* Assets.xcassets in Resources */,
+				CA8AA286258C1F3C00825213 /* ReportView.xib in Resources */,
 				CA8AA24E258BCBB800825213 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,8 +192,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA8AA24B258BCBB800825213 /* ViewController.swift in Sources */,
+				CA8AA27A258C132600825213 /* PromotedEmployee.swift in Sources */,
+				CA8AA26B258BDDE200825213 /* HierarchyNet.swift in Sources */,
 				CA8AA247258BCBB800825213 /* AppDelegate.swift in Sources */,
+				CA8AA277258C075C00825213 /* Commit.swift in Sources */,
 				CA8AA249258BCBB800825213 /* SceneDelegate.swift in Sources */,
+				CA8AA268258BD92000825213 /* Comment.swift in Sources */,
+				CA8AA26E258BE00D00825213 /* HierarchyIterator.swift in Sources */,
+				CA8AA25F258BCF6700825213 /* Employee.swift in Sources */,
+				CA8AA271258BFD7000825213 /* EmployeeTreeGenerator.swift in Sources */,
+				CA8AA280258C1D3C00825213 /* ReportVisitor.swift in Sources */,
+				CA8AA262258BD0E100825213 /* Task.swift in Sources */,
+				CA8AA27D258C1CDE00825213 /* Report.swift in Sources */,
+				CA8AA283258C1E7200825213 /* ReportBuilder.swift in Sources */,
+				CA8AA265258BD11300825213 /* TaskManager.swift in Sources */,
+				CA8AA274258C04A800825213 /* TasksIterator.swift in Sources */,
 				CA8AA251258BCBB800825213 /* Sprint.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
