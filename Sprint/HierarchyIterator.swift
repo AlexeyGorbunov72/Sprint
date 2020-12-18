@@ -10,9 +10,9 @@ import Foundation
 struct HierarchyIterator: Sequence, IteratorProtocol {
     weak var root: Employee?
     private var queue: [Employee] = []
-    init(root: Employee?) {
+    init(root: PromotedEmployee?) {
         self.root = root
-        queue += root?.slaves ?? []
+        queue += root?.subordinates ?? []
     }
     
     mutating func next() -> Employee? {
@@ -20,7 +20,9 @@ struct HierarchyIterator: Sequence, IteratorProtocol {
             return nil
         }
         defer { queue.removeFirst() }
-        queue += queue[0].slaves ?? []
+        if let promoted = queue[0] as? PromotedEmployee{
+            queue += promoted.subordinates ?? []
+        }
         return queue[0]
     }
 }

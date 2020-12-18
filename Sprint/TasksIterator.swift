@@ -8,14 +8,9 @@
 import Foundation
 struct TasksIterator: Sequence, IteratorProtocol {
     private var queue: [Task] = []
-    init(_ root: [TaskState: [Task]]?) {
-        guard let root = root else {
-            return
-        }
-        for type in TaskState.allCases{
-            for task in root[type]!{
+    init(_ root: [Task]) {
+        for task in root{
                 queue.append(task)
-            }
         }
     }
     

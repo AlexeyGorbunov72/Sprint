@@ -29,7 +29,15 @@
 		CA8AA283258C1E7200825213 /* ReportBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8AA282258C1E7200825213 /* ReportBuilder.swift */; };
 		CA8AA286258C1F3C00825213 /* ReportView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA8AA285258C1F3C00825213 /* ReportView.xib */; };
 		CA8AA289258C213400825213 /* TaskView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA8AA288258C213400825213 /* TaskView.xib */; };
-		CA8AA28C258C222C00825213 /* LikeButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA8AA28B258C222C00825213 /* LikeButton.xib */; };
+		CA8AA28F258C22C500825213 /* LikeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8AA28E258C22C500825213 /* LikeButton.swift */; };
+		CA8AA293258C259400825213 /* LikeCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8AA292258C259400825213 /* LikeCommand.swift */; };
+		CA8AA296258C25A900825213 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8AA295258C25A900825213 /* Command.swift */; };
+		CA8AA299258C3A5C00825213 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8AA298258C3A5C00825213 /* TaskView.swift */; };
+		CA8AA2A0258C427F00825213 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8AA29F258C427F00825213 /* TasksViewController.swift */; };
+		CA8AA2A3258C42C800825213 /* TasksViewConcentrate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8AA2A2258C42C800825213 /* TasksViewConcentrate.swift */; };
+		CA8AA2A7258C43CE00825213 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8AA2A5258C43CE00825213 /* TaskTableViewCell.swift */; };
+		CA8AA2A8258C43CE00825213 /* TaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA8AA2A6258C43CE00825213 /* TaskTableViewCell.xib */; };
+		CA8AA2AD258C53E300825213 /* CreateTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8AA2AC258C53E300825213 /* CreateTaskViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,7 +65,15 @@
 		CA8AA282258C1E7200825213 /* ReportBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportBuilder.swift; sourceTree = "<group>"; };
 		CA8AA285258C1F3C00825213 /* ReportView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReportView.xib; sourceTree = "<group>"; };
 		CA8AA288258C213400825213 /* TaskView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskView.xib; sourceTree = "<group>"; };
-		CA8AA28B258C222C00825213 /* LikeButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LikeButton.xib; sourceTree = "<group>"; };
+		CA8AA28E258C22C500825213 /* LikeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeButton.swift; sourceTree = "<group>"; };
+		CA8AA292258C259400825213 /* LikeCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeCommand.swift; sourceTree = "<group>"; };
+		CA8AA295258C25A900825213 /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		CA8AA298258C3A5C00825213 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
+		CA8AA29F258C427F00825213 /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
+		CA8AA2A2258C42C800825213 /* TasksViewConcentrate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewConcentrate.swift; sourceTree = "<group>"; };
+		CA8AA2A5258C43CE00825213 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
+		CA8AA2A6258C43CE00825213 /* TaskTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskTableViewCell.xib; sourceTree = "<group>"; };
+		CA8AA2AC258C53E300825213 /* CreateTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +129,15 @@
 				CA8AA282258C1E7200825213 /* ReportBuilder.swift */,
 				CA8AA285258C1F3C00825213 /* ReportView.xib */,
 				CA8AA288258C213400825213 /* TaskView.xib */,
-				CA8AA28B258C222C00825213 /* LikeButton.xib */,
+				CA8AA28E258C22C500825213 /* LikeButton.swift */,
+				CA8AA292258C259400825213 /* LikeCommand.swift */,
+				CA8AA295258C25A900825213 /* Command.swift */,
+				CA8AA298258C3A5C00825213 /* TaskView.swift */,
+				CA8AA29F258C427F00825213 /* TasksViewController.swift */,
+				CA8AA2A2258C42C800825213 /* TasksViewConcentrate.swift */,
+				CA8AA2A5258C43CE00825213 /* TaskTableViewCell.swift */,
+				CA8AA2A6258C43CE00825213 /* TaskTableViewCell.xib */,
+				CA8AA2AC258C53E300825213 /* CreateTaskViewController.swift */,
 			);
 			path = Sprint;
 			sourceTree = "<group>";
@@ -175,7 +199,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA8AA28C258C222C00825213 /* LikeButton.xib in Resources */,
+				CA8AA2A8258C43CE00825213 /* TaskTableViewCell.xib in Resources */,
 				CA8AA256258BCBBC00825213 /* LaunchScreen.storyboard in Resources */,
 				CA8AA289258C213400825213 /* TaskView.xib in Resources */,
 				CA8AA253258BCBBC00825213 /* Assets.xcassets in Resources */,
@@ -194,20 +218,28 @@
 				CA8AA24B258BCBB800825213 /* ViewController.swift in Sources */,
 				CA8AA27A258C132600825213 /* PromotedEmployee.swift in Sources */,
 				CA8AA26B258BDDE200825213 /* HierarchyNet.swift in Sources */,
+				CA8AA2A3258C42C800825213 /* TasksViewConcentrate.swift in Sources */,
+				CA8AA296258C25A900825213 /* Command.swift in Sources */,
 				CA8AA247258BCBB800825213 /* AppDelegate.swift in Sources */,
 				CA8AA277258C075C00825213 /* Commit.swift in Sources */,
 				CA8AA249258BCBB800825213 /* SceneDelegate.swift in Sources */,
+				CA8AA2A7258C43CE00825213 /* TaskTableViewCell.swift in Sources */,
 				CA8AA268258BD92000825213 /* Comment.swift in Sources */,
 				CA8AA26E258BE00D00825213 /* HierarchyIterator.swift in Sources */,
 				CA8AA25F258BCF6700825213 /* Employee.swift in Sources */,
 				CA8AA271258BFD7000825213 /* EmployeeTreeGenerator.swift in Sources */,
+				CA8AA28F258C22C500825213 /* LikeButton.swift in Sources */,
 				CA8AA280258C1D3C00825213 /* ReportVisitor.swift in Sources */,
+				CA8AA2A0258C427F00825213 /* TasksViewController.swift in Sources */,
+				CA8AA293258C259400825213 /* LikeCommand.swift in Sources */,
 				CA8AA262258BD0E100825213 /* Task.swift in Sources */,
+				CA8AA299258C3A5C00825213 /* TaskView.swift in Sources */,
 				CA8AA27D258C1CDE00825213 /* Report.swift in Sources */,
 				CA8AA283258C1E7200825213 /* ReportBuilder.swift in Sources */,
 				CA8AA265258BD11300825213 /* TaskManager.swift in Sources */,
 				CA8AA274258C04A800825213 /* TasksIterator.swift in Sources */,
 				CA8AA251258BCBB800825213 /* Sprint.xcdatamodeld in Sources */,
+				CA8AA2AD258C53E300825213 /* CreateTaskViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

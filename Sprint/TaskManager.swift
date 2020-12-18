@@ -8,13 +8,11 @@
 import Foundation
 
 class TaskManager{
-    private var storage: [TaskState: [Task]] = [.active: [],
-                                                .open: [],
-                                                .resolved: []]
-    
+    static let taskManager = TaskManager()
+    private var storage: [Task] = []
     func addTask(description: String, name: String){
         let newTask = Task(description: description, name: name)
-        storage[.open]?.append(newTask)
+        storage.append(newTask)
     }
     func addComment(description: String, taskUID: Int, commentatorUID: Int){
         let task = findTaskByUID(taskUID: taskUID)
@@ -22,26 +20,18 @@ class TaskManager{
     }
     
     func changeStateTask(taskUID: Int, to state: TaskState){
-        let taskIterator = TasksIterator(storage)
-        var taskToChange: Task?
-        for task in taskIterator{
-            if task.uid == taskUID{
-                taskToChange = task
-                break
-            }
-        }
+        let taskToChange = findTaskByUID(taskUID: taskUID)
         guard let taskToChangeUnwarped = taskToChange else {
             return
         }
-        storage[state]?.removeAll(where: { $0.uid == taskUID })
         taskToChangeUnwarped.changeState(to: state)
-        storage[state]?.append(taskToChangeUnwarped)
-        
     }
-    func changeOwner(taskUID: Int, to owner: Employee){
+    
+    func changeOwner(taskUID: Int, to owner: Int){
         let task = findTaskByUID(taskUID: taskUID)
         task?.changeOwner(to: owner)
     }
+    
     func findTaskByUID(taskUID: Int) -> Task?{
         let taskIterator = TasksIterator(storage)
         for task in taskIterator{
@@ -55,12 +45,18 @@ class TaskManager{
         let taskIterator = TasksIterator(storage)
         var tasks: [Task] = []
         for task in taskIterator{
-            if task.owner?.UID == employee.UID{
+            if task.owner == employee.UID{
                 tasks.append(task)
             }
         }
         return tasks
     }
+    
+    func freeTask(taskUID: Int){
+        let task = findTaskByUID(taskUID: taskUID)
+        task?.setFree()
+    }
+    
     func findTasksWithContribyte(by employee: Employee) -> [Task]{
         let taskIterator = TasksIterator(storage)
         var tasks: [Task] = []
@@ -71,6 +67,7 @@ class TaskManager{
         }
         return tasks
     }
+    
     func findTaskByDateChange(date: Date) -> Task?{
         let taskIterator = TasksIterator(storage)
         for task in taskIterator{
@@ -80,6 +77,7 @@ class TaskManager{
         }
         return nil
     }
+    
     func findTaskByDateCreate(date: Date) -> Task?{
         let taskIterator = TasksIterator(storage)
         for task in taskIterator{
@@ -90,4 +88,21 @@ class TaskManager{
         return nil
     }
     
+}
+extension TaskManager: TaskDataSource{
+    func getTasks(types: TaskState...) -> [Task] {
+        var response: [Task] = []
+        let taskIterator = TasksIterator(storage)
+        for task in taskIterator{
+            for type in types{
+                if task.state == type{
+                    response.append(task)
+                }
+            }
+        }
+        return response
+    }
+}
+protocol TaskDataSource {
+    func getTasks(types: TaskState...) -> [Task]
 }

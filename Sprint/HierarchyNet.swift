@@ -12,16 +12,19 @@ class HierarchyNet{
     func moveEmployee(employeeUID: Int, to newOwnerUID: Int){
         
     }
+    func addEmployee(employee: Employee, to employeeMaster: Int){
+        
+    }
     func toFireEmployee(employeeUID: Int){
         
     }
-    private func findEmployee(employeeUID: Int) -> Employee?{
-        let netIterator = HierarchyIterator(root: teemLead)
-        for employee in netIterator{
-            if employee.UID == employeeUID{
-                return employee
-            }
-        }
-        return nil
-    }
+//    private func findEmployee(employeeUID: Int) -> Employee?{
+//        let netIterator = HierarchyIterator(root: teemLead)
+//        for employee in netIterator{
+//            if employee.UID == employeeUID{
+//                return employee
+//            }
+//        }
+//        return nil
+//    }
 }

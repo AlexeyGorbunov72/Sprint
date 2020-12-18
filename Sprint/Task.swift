@@ -24,7 +24,7 @@ class Task{
     }
     private static var globalUID: Int = -1
     private(set) var state: TaskState = .open
-    private(set) weak var owner: Employee?
+    private(set) var owner: Int?
     private(set) var lastTimeOfChange: Date = Date()
     private(set) var dateOfCreation: Date = Date()
     private(set) lazy var uid = genereteUID()
@@ -42,7 +42,7 @@ class Task{
         self.state = state
     }
     
-    func changeOwner(to owner: Employee){
+    func changeOwner(to owner: Int){
         self.owner = owner
     }
     
@@ -50,6 +50,10 @@ class Task{
         comments.append(Comment(text: text, ownerUID: commentOwner))
     }
     
+    func setFree(){
+        owner = -1
+        state = .open
+    }
     func isContributor(employee: Employee) -> Bool{
         for commit in commits{
             if commit.owner.UID == employee.UID{
@@ -60,8 +64,8 @@ class Task{
     }
     
 }
-enum TaskState: CaseIterable{
-    case open
-    case active
-    case resolved
+enum TaskState: String, CaseIterable{
+    case open = "Свободное задание"
+    case active = "В процессе выполнения"
+    case resolved = "Выполнено!"
 }
